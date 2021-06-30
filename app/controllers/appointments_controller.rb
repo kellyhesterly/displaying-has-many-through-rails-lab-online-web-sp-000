@@ -22,4 +22,9 @@ class AppointmentsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def appointment_params
+  end
 end
