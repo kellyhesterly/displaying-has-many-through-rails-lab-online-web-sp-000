@@ -6,5 +6,6 @@ class Appointment < ApplicationRecord
   end
 
   def doctor_name
+    self.doctor ? self.doctor.name = : nil
   end
 end
