@@ -9,4 +9,7 @@ class Appointment < ApplicationRecord
   def doctor_name
     self.doctor ? self.doctor.name = : nil
   end
+
+  def patient_name=(name)
+  end
 end
