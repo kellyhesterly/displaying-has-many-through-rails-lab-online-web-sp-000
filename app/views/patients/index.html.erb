@@ -1,5 +1,5 @@
 <h3>Patients</h3>
 
 <% @patients.each do |patient| %>
-  Name: <%= patient.name %> Number of Appointments: <%= appointment_count %>
+  Name: <%= patient.name %> Number of Appointments: <%= patient.appointments.count %>
 <% end %>
