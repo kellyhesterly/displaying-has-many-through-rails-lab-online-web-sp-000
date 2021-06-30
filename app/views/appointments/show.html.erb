@@ -1,3 +1,15 @@
 <h1><%= @appointment.doctor.name %> Appointments</h1>
 
-<h3>Doctor <a href="<%= doctor_path(@doctor) %>"<%= @appointment.doctor.name %></h3>
+<h3>Doctor <a href="<%= doctor_path(@doctor) %>"<%= @appointment.doctor.name %></a></h3>
+
+
+  <% @songs.each do |song| %>
+    <li>
+      <a href="<%= song_path(song) %>">
+        <%= song.artist.name %>
+        -
+        <%= song.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
