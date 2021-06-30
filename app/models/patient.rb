@@ -4,5 +4,6 @@ class Patient < ApplicationRecord
 
   def patient_appointment_count
     self.appointment.count
+    binding.pry
   end
 end
