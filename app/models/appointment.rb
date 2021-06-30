@@ -7,7 +7,7 @@ class Appointment < ApplicationRecord
   end
 
   def doctor_name
-    self.doctor ? self.doctor.name = : nil
+    self.doctor ? self.doctor.name : nil
   end
 
   def patient_name=(name)
@@ -15,6 +15,6 @@ class Appointment < ApplicationRecord
   end
 
   def patient_name
-    self.patient ? self.patient.name = : nil
+    self.patient ? self.patient.name : nil
   end
 end
