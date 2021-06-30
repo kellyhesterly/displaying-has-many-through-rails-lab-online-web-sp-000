@@ -4,4 +4,7 @@ class Appointment < ApplicationRecord
 
   def doctor_name=(name)
   end
+
+  def doctor_name
+  end
 end
